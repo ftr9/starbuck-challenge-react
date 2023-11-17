@@ -42,15 +42,15 @@ const ContentDisplay = ({ onProductImageClick }) => {
   const [sliderScope, sliderAnimate] = useAnimate();
   const [selectedProduct, setSelectedProduct] = useState(products[0]);
 
-  const imgClickHandler = (slidePercentage, index) => {
+  const imgClickHandler = (slidePercentage, currentIndex) => {
     return () => {
-      onProductImageClick(index);
+      onProductImageClick(currentIndex);
       sliderAnimate(
         sliderScope.current,
         { left: slidePercentage },
         { duration: 1 }
       );
-      setSelectedProduct(products[index]);
+      setSelectedProduct(products[currentIndex]);
     };
   };
 
