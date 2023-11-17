@@ -1,6 +1,8 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## animation using framer motion + react
+
+https://github.com/ftr9/starbuck-challenge-react/assets/60734475/29ac618d-3e9f-41e7-a344-687358231dd8
 
 Currently, two official plugins are available:
 
